@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Complete Compatibility Test – Placealgo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Placealgo calculates the compatibility between your name and the places you are considering moving to.">
+    <link rel="icon" type="image/png" href="../assets/Favicon_Placealgo.png">
+    <link rel="stylesheet" href="../assets/style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WEHSX3W3NQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-WEHSX3W3NQ');
+    </script>
+    <script src="../assets/placealgo.js"></script>
+  </head>
+
+  <body>
+    <div id="tool-alert" class="alert" role="alert" hidden></div>
+    <header class="main-header">
+      <nav>
+        <a class="logo" href="../"><img src="../assets/Logo_Placealgo.png" alt="Placealgo"></a>
+        <div class="nav-links">
+          <a href="../about/">About</a>
+          <a href="../science/">Science</a>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+<div class="questionnaire-container">
+  <form id="tool-form" data-tool="complete" class="compatibility-form">
+    <h2 class="page-title">Place Compatibility Questionnaire</h2>
+    <p class="intro">Welcome to Placealgo. Our aim is to help you consider all factors that come into play for choosing a place to live.</p>
+    <p class="instruction">Think of a place that you consider moving to and answer the following questions.</p>
+    <div class="form-sections">
+      <div class="section person-section">
+        <h3>Your Information</h3>
+        <div class="name-grid">
+            <div class="form-group">
+              <label for="first_name">First Name:</label>
+              <input type="text" id="first_name" required>
+            </div>
+            <div class="form-group">
+              <label for="middle_name">Middle Name (if applicable):</label>
+              <input type="text" id="middle_name">
+            </div>
+        </div>
+        <div class="name-grid">
+            <div class="form-group">
+              <label for="last_name">Last Name:</label>
+              <input type="text" id="last_name" required>
+            </div>
+            <div class="form-group">
+              <label for="maiden_name">Maiden Name (if applicable):</label>
+              <input type="text" id="maiden_name">
+            </div>
+        </div>
+      </div>
+      <div class="section person-section">
+        <h3>Place Information</h3>
+        <div class="name-grid">
+            <div class="form-group">
+              <label for="country_name">Country:</label>
+              <input type="text" id="country_name">
+            </div>
+            <div class="form-group">
+              <label for="state_name">State/Province/Region:</label>
+              <input type="text" id="state_name">
+            </div>
+        </div>
+        <div class="name-grid">
+            <div class="form-group">
+              <label for="city_name">City/Town:</label>
+              <input type="text" id="city_name">
+            </div>
+            <div class="form-group">
+              <label for="suburb_name">Suburb/Neighborhood:</label>
+              <input type="text" id="suburb_name">
+            </div>
+        </div>
+        <div class="form-group">
+          <label for="keyword_name">Keyword/Landmark (optional):</label>
+          <input type="text" id="keyword_name">
+          <small class="form-text text-muted">Can be a continent, region, street name, or any other place-related name</small>
+        </div>
+      </div>
+      <div class="section person-section">
+        <h3>Place-related Questionnaire</h3>
+        <p class="note">Answer the following questions about the place you're considering.</p>
+        <table class="questionnaire-table">
+          <thead><tr><th>Question</th><th class="answer-col">Yes</th><th class="answer-col">No</th></tr></thead>
+          <tbody>
+              <tr>
+                <td>1. Were you born or grew up there?</td>
+                <td class="answer-col"><input type="radio" name="birthplace" value="yes" aria-label="Yes"></td>
+                <td class="answer-col"><input type="radio" name="birthplace" value="no" aria-label="No" checked></td>
+              </tr>
+              <tr>
+                <td>2. Do you speak the language there? Or are you eager to learn it?</td>
+                <td class="answer-col"><input type="radio" name="language" value="yes" aria-label="Yes"></td>
+                <td class="answer-col"><input type="radio" name="language" value="no" aria-label="No" checked></td>
+              </tr>
+              <tr>
+                <td>3. Do you have the citizenship, or are you motivated to apply for a permanent residency visa?</td>
+                <td class="answer-col"><input type="radio" name="citizenship" value="yes" aria-label="Yes"></td>
+                <td class="answer-col"><input type="radio" name="citizenship" value="no" aria-label="No" checked></td>
+              </tr>
+              <tr>
+                <td>4. Do you like the climate there? Or at least do you like most seasons there?</td>
+                <td class="answer-col"><input type="radio" name="climate" value="yes" aria-label="Yes"></td>
+                <td class="answer-col"><input type="radio" name="climate" value="no" aria-label="No" checked></td>
+              </tr>
+              <tr>
+                <td>5. Do you like the location/topography? (sea, lake, river, forests, hills, mountain, countryside, ...)</td>
+                <td class="answer-col"><input type="radio" name="topography" value="yes" aria-label="Yes"></td>
+                <td class="answer-col"><input type="radio" name="topography" value="no" aria-label="No" checked></td>
+              </tr>
+              <tr>
+                <td>6. Can you exert your favourite sports and hobbies there?</td>
+                <td class="answer-col"><input type="radio" name="sports_hobbies" value="yes" aria-label="Yes"></td>
+                <td class="answer-col"><input type="radio" name="sports_hobbies" value="no" aria-label="No" checked></td>
+              </tr>
+              <tr>
+                <td>7. Can you exert your profession there?</td>
+                <td class="answer-col"><input type="radio" name="profession" value="yes" aria-label="Yes"></td>
+                <td class="answer-col"><input type="radio" name="profession" value="no" aria-label="No" checked></td>
+              </tr>
+              <tr>
+                <td>8. Do you like the size of the place? (big city, medium town, small town, hamlet, ...)</td>
+                <td class="answer-col"><input type="radio" name="size" value="yes" aria-label="Yes"></td>
+                <td class="answer-col"><input type="radio" name="size" value="no" aria-label="No" checked></td>
+              </tr>
+              <tr>
+                <td>9. Do you like the culture of the place? (architecture, food, fashion, traditions, people, ... incl. Indigenous culture)</td>
+                <td class="answer-col"><input type="radio" name="culture" value="yes" aria-label="Yes"></td>
+                <td class="answer-col"><input type="radio" name="culture" value="no" aria-label="No" checked></td>
+              </tr>
+              <tr>
+                <td>10. Does the place have the amenities you need? (shops, schools, cafés, restaurants, cinemas, theatres, museums, hospital, stadium, swimming pool, ...)</td>
+                <td class="answer-col"><input type="radio" name="amenities" value="yes" aria-label="Yes"></td>
+                <td class="answer-col"><input type="radio" name="amenities" value="no" aria-label="No" checked></td>
+              </tr>
+              <tr>
+                <td>11. Does the place have the infrastructure you need? (public transport, cycling paths, roads, public buildings, residential houses, ...)</td>
+                <td class="answer-col"><input type="radio" name="infrastructure" value="yes" aria-label="Yes"></td>
+                <td class="answer-col"><input type="radio" name="infrastructure" value="no" aria-label="No" checked></td>
+              </tr>
+              <tr>
+                <td>12. Do you have friends and/or family living there or close by?</td>
+                <td class="answer-col"><input type="radio" name="friends_family" value="yes" aria-label="Yes"></td>
+                <td class="answer-col"><input type="radio" name="friends_family" value="no" aria-label="No" checked></td>
+              </tr>
+              <tr>
+                <td>13. Do you have a professional network there?</td>
+                <td class="answer-col"><input type="radio" name="professional_network" value="yes" aria-label="Yes"></td>
+                <td class="answer-col"><input type="radio" name="professional_network" value="no" aria-label="No" checked></td>
+              </tr>
+              <tr>
+                <td>14. Do you think you will feel safe there?</td>
+                <td class="answer-col"><input type="radio" name="safety" value="yes" aria-label="Yes"></td>
+                <td class="answer-col"><input type="radio" name="safety" value="no" aria-label="No" checked></td>
+              </tr>
+              <tr>
+                <td>15. Do you think the place is or may be affordable for you to live in?</td>
+                <td class="answer-col"><input type="radio" name="affordability" value="yes" aria-label="Yes"></td>
+                <td class="answer-col"><input type="radio" name="affordability" value="no" aria-label="No" checked></td>
+              </tr>
+              <tr>
+                <td>16. Are you OK with the country's politics?</td>
+                <td class="answer-col"><input type="radio" name="politics" value="yes" aria-label="Yes"></td>
+                <td class="answer-col"><input type="radio" name="politics" value="no" aria-label="No" checked></td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="submit-section">
+        <input type="submit" value="Calculate Compatibility" class="submit-button">
+        <button type="reset" class="cta-button">Reset Form</button>
+      </div>
+    </div>
+  </form>
+  <div id="tool-results" hidden></div>
+</div>
+    </main>
+    <footer class="main-footer">
+      <div class="footer-content">
+        <p>&copy; <span id="year">2026</span> Placealgo. All rights reserved.</p>
+        <a href="../disclaimer/">Disclaimer</a>
+        <a href="../contact/">Contact</a>
+      </div>
+    </footer>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  </body>
+</html>

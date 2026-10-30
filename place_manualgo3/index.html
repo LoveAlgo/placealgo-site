@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Name-Only Compatibility – Placealgo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Placealgo calculates the compatibility between your name and the places you are considering moving to.">
+    <link rel="icon" type="image/png" href="../assets/Favicon_Placealgo.png">
+    <link rel="stylesheet" href="../assets/style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WEHSX3W3NQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-WEHSX3W3NQ');
+    </script>
+    <script src="../assets/placealgo.js"></script>
+  </head>
+
+  <body>
+    <div id="tool-alert" class="alert" role="alert" hidden></div>
+    <header class="main-header">
+      <nav>
+        <a class="logo" href="../"><img src="../assets/Logo_Placealgo.png" alt="Placealgo"></a>
+        <div class="nav-links">
+          <a href="../about/">About</a>
+          <a href="../science/">Science</a>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+<div class="container">
+  <form id="tool-form" data-tool="name-only">
+    <h1>PlaceAlgo - Full Name-Place Compatibility</h1>
+    <div class="card">
+      <div class="card-header"><h3>Check your name compatibility with various places</h3></div>
+      <div class="card-body">
+          <div class="form-section">
+            <h4>Your Name</h4>
+            <div class="form-row">
+              <div class="form-column">
+                <div class="form-group">
+                  <label class="form-label" for="first_name">First Name</label>
+                  <input type="text" id="first_name" class="form-control" required>
+                </div>
+              </div>
+              <div class="form-column">
+                <div class="form-group">
+                  <label class="form-label" for="middle_name">Middle Name</label>
+                  <input type="text" id="middle_name" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-column">
+                <div class="form-group">
+                  <label class="form-label" for="last_name">Last Name</label>
+                  <input type="text" id="last_name" class="form-control" required>
+                </div>
+              </div>
+              <div class="form-column">
+                <div class="form-group">
+                  <label class="form-label" for="maiden_name">Maiden Name</label>
+                  <input type="text" id="maiden_name" class="form-control">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-section">
+            <h4>Place Details (at least one is required)</h4>
+            <div class="form-row">
+              <div class="form-column">
+                <div class="form-group">
+                  <label class="form-label" for="country_name">Country Name</label>
+                  <input type="text" id="country_name" class="form-control">
+                </div>
+              </div>
+              <div class="form-column">
+                <div class="form-group">
+                  <label class="form-label" for="state_name">State/Province Name</label>
+                  <input type="text" id="state_name" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-column">
+                <div class="form-group">
+                  <label class="form-label" for="city_name">City/Town Name</label>
+                  <input type="text" id="city_name" class="form-control">
+                </div>
+              </div>
+              <div class="form-column">
+                <div class="form-group">
+                  <label class="form-label" for="suburb_name">Suburb/Neighborhood Name</label>
+                  <input type="text" id="suburb_name" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-column">
+                <div class="form-group">
+                  <label class="form-label" for="keyword_name">Other Place Name/Keyword</label>
+                  <input type="text" id="keyword_name" class="form-control">
+                  <small class="form-text text-muted">Can be a continent, region, street name, or any other place-related name</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top: 20px;"><input type="submit" value="Calculate Compatibility" class="btn"></div>
+      </div>
+    </div>
+  </form>
+  <div id="tool-results" hidden></div>
+</div>
+    </main>
+    <footer class="main-footer">
+      <div class="footer-content">
+        <p>&copy; <span id="year">2026</span> Placealgo. All rights reserved.</p>
+        <a href="../disclaimer/">Disclaimer</a>
+        <a href="../contact/">Contact</a>
+      </div>
+    </footer>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  </body>
+</html>

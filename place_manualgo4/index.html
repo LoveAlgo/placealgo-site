@@ -1,36 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Complete Compatibility Test – Placealgo</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="Placealgo calculates the compatibility between your name and the places you are considering moving to.">
-    <link rel="icon" type="image/png" href="../assets/Favicon_Placealgo.png">
-    <link rel="stylesheet" href="../assets/style.css">
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WEHSX3W3NQ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-WEHSX3W3NQ');
-    </script>
-    <script src="../assets/placealgo.js"></script>
-  </head>
-
-  <body>
-    <div id="tool-alert" class="alert" role="alert" hidden></div>
-    <header class="main-header">
-      <nav>
-        <a class="logo" href="../"><img src="../assets/Logo_Placealgo.png" alt="Placealgo"></a>
-        <div class="nav-links">
-          <a href="../about/">About</a>
-          <a href="../science/">Science</a>
-        </div>
-      </nav>
-    </header>
-    <main class="main-container">
+---
+layout: default
+title: Complete Compatibility Test
+script: true
+---
 <div class="questionnaire-container">
   <form id="tool-form" data-tool="complete" class="compatibility-form">
     <h2 class="page-title">Place Compatibility Questionnaire</h2>
@@ -185,14 +157,4 @@
   </form>
   <div id="tool-results" hidden></div>
 </div>
-    </main>
-    <footer class="main-footer">
-      <div class="footer-content">
-        <p>&copy; <span id="year">2026</span> Placealgo. All rights reserved.</p>
-        <a href="../disclaimer/">Disclaimer</a>
-        <a href="../contact/">Contact</a>
-      </div>
-    </footer>
-    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
-  </body>
-</html>
+    

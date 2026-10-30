@@ -1,0 +1,80 @@
+# Settings for the browser editor at https://app.pagescms.org
+# Each entry below is one page you can edit. The calculators themselves are not editable here.
+
+media:
+  input: assets/images
+  output: /assets/images
+  categories: [image]
+
+settings:
+  content:
+    merge: true   # keeps the technical settings at the top of each page when you save
+
+content:
+  - name: home
+    label: Home page
+    type: file
+    path: index.html
+    format: yaml-frontmatter
+    operations: { delete: false }
+    fields:
+      - { name: title, label: Heading, type: string, required: true }
+      - { name: image, label: Image, type: image }
+      - { name: lead, label: Tagline (below the image), type: string }
+      - name: body
+        label: Introduction
+        type: rich-text
+        options: { format: html }
+      - { name: note, label: Note below the buttons, type: text }
+
+  - name: about
+    label: About
+    type: file
+    path: about/index.html
+    format: yaml-frontmatter
+    operations: { delete: false }
+    fields:
+      - { name: title, label: Heading, type: string, required: true }
+      - name: body
+        label: Text
+        type: rich-text
+        options: { format: html }
+
+  - name: science
+    label: Science
+    type: file
+    path: science/index.html
+    format: yaml-frontmatter
+    operations: { delete: false }
+    fields:
+      - { name: title, label: Heading, type: string, required: true }
+      - name: body
+        label: Text
+        type: rich-text
+        options: { format: html }
+
+  - name: contact
+    label: Contact
+    type: file
+    path: contact/index.html
+    format: yaml-frontmatter
+    operations: { delete: false }
+    fields:
+      - { name: title, label: Heading, type: string, required: true }
+      - name: body
+        label: Text
+        type: rich-text
+        options: { format: html }
+
+  - name: disclaimer
+    label: Disclaimer
+    type: file
+    path: disclaimer/index.html
+    format: yaml-frontmatter
+    operations: { delete: false }
+    fields:
+      - { name: title, label: Heading, type: string, required: true }
+      - name: body
+        label: Text
+        type: rich-text
+        options: { format: html }

@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<div class="welcome-container">
+  <div class="welcome-content">
+    <h1>{{ page.title }}</h1>
+    {% if page.image %}<img src="{{ page.image }}" alt="" class="welcome-image">{% endif %}
+    {% if page.lead %}<p class="lead">{{ page.lead }}</p>{% endif %}
+    <div class="welcome-intro">
+{{ content }}
+    </div>
+    <div class="button-group">
+      <a href="/place_manualgo4/" class="cta-button">Complete Compatibility Test</a>
+      <a href="/place_manualgo3/" class="cta-button">Name-Only Compatibility</a>
+      <a href="/place_manualgo/" class="cta-button">Basic Compatibility</a>
+    </div>
+    {% if page.note %}<p class="version-note">{{ page.note }}</p>{% endif %}
+  </div>
+</div>

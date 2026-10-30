@@ -1,0 +1,9 @@
+# Jekyll settings for GitHub Pages
+title: Placealgo
+exclude:
+  - README.md
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
